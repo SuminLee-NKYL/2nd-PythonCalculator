@@ -1,0 +1,1901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>882</width>
+    <height>679</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>882</width>
+    <height>679</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>맑은 고딕</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>계산기</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#EFEFF7;</string>
+  </property>
+  <widget class="QTextBrowser" name="tv_Past_Result">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>881</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="lineWrapMode">
+    <enum>QTextEdit::WidgetWidth</enum>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'맑은 고딕'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="tv_Display">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>841</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#EFEFF7;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'맑은 고딕'; font-size:24pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>841</width>
+     <height>499</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>맑은 고딕</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0,0,0,0,0">
+    <property name="verticalSpacing">
+     <number>7</number>
+    </property>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="btn_Deg">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>Deg</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QPushButton" name="btn_Power">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>X^Y</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="btn_Ans">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>Ans</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QPushButton" name="btn_1">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btn_Tan">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>tan</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QPushButton" name="btn_0">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="btn_Rad">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>Rad</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QPushButton" name="btn_5">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QPushButton" name="btn_Right_Brack">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>)</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="QPushButton" name="btn_Multipulication">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>x</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="btn_Factorial">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>x!</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="btn_Inv">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>lnv</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btn_Cos">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>cos</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="btn_Pi">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>π</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="btn_exponent">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>e</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="btn_Ce">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#0080ff;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>CE</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="QPushButton" name="btn_3">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="btn_Log">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>log</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="btn_7">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="QPushButton" name="btn_Eq">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#2084F7;
+color:white;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#6aadfa;
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="QPushButton" name="btn_6">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="btn_EXP">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>EXP</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="btn_Square_Loot">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>√</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QPushButton" name="btn_Div">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>÷</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="QPushButton" name="btn_Del">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>⌫</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QPushButton" name="btn_4">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="btn_Left_Brack">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>(</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="QPushButton" name="btn_Save">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#CBE8FF;
+color:white;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EFF8FF;
+}</string>
+      </property>
+      <property name="text">
+       <string>저장</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="btn_Ln">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>ln</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="btn_Math_Expression">
+      <property name="minimumSize">
+       <size>
+        <width>230</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>230</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>수식</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btn_Sin">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>sin</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QPushButton" name="btn_8">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QPushButton" name="btn_Dec">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="QPushButton" name="btn_Minus">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="QPushButton" name="btn_Plus">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QPushButton" name="btn_2">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QPushButton" name="btn_9">
+      <property name="minimumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>110</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#FFFCFF;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#EBEEF2;
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" colspan="2">
+     <widget class="QPushButton" name="btn_Graph">
+      <property name="minimumSize">
+       <size>
+        <width>230</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>230</width>
+        <height>65</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {background-color:#EFEFF7;
+color:#6D757E;
+border:1px;
+border-color:#c3c3c9;
+border-style:outset;
+border-radius: 20px;
+padding:10px;
+}
+QPushButton:pressed {
+background-color:#DFE4ED;
+}</string>
+      </property>
+      <property name="text">
+       <string>그래프</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
