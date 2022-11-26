@@ -170,7 +170,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="5" column="3">
-     <widget class="QPushButton" name="btn_Power">
+     <widget class="QPushButton" name="btn_Square_Root">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -206,7 +206,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>X^Y</string>
+       <string>√</string>
       </property>
       <property name="iconSize">
        <size>
@@ -347,7 +347,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>tan</string>
+       <string>Tan</string>
       </property>
       <property name="iconSize">
        <size>
@@ -637,7 +637,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="1" column="3">
-     <widget class="QPushButton" name="btn_Inv">
+     <widget class="QPushButton" name="btn_Grad">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -673,7 +673,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>lnv</string>
+       <string>Grad</string>
       </property>
       <property name="iconSize">
        <size>
@@ -720,7 +720,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>cos</string>
+       <string>Cos</string>
       </property>
       <property name="iconSize">
        <size>
@@ -731,7 +731,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="3" column="3">
-     <widget class="QPushButton" name="btn_Pi">
+     <widget class="QPushButton" name="btn_Pow">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -764,7 +764,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>π</string>
+       <string>X^Y</string>
       </property>
       <property name="iconSize">
        <size>
@@ -775,7 +775,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QPushButton" name="btn_exponent">
+     <widget class="QPushButton" name="btn_Log2">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -811,7 +811,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>e</string>
+       <string>Log2</string>
       </property>
       <property name="iconSize">
        <size>
@@ -916,7 +916,7 @@ background-color:#EBEEF2;
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QPushButton" name="btn_Log">
+     <widget class="QPushButton" name="btn_Log10">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -952,7 +952,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>log</string>
+       <string>Log10</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1137,7 +1137,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>EXP</string>
+       <string>Exp</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1148,7 +1148,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="4" column="3">
-     <widget class="QPushButton" name="btn_Square_Loot">
+     <widget class="QPushButton" name="btn_Ln">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -1184,7 +1184,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>√</string>
+       <string>Ln</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1278,7 +1278,7 @@ background-color:#EBEEF2;
 }</string>
       </property>
       <property name="text">
-       <string>⌫</string>
+       <string>&lt;-</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1380,7 +1380,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="0" column="7">
-     <widget class="QPushButton" name="btn_Save">
+     <widget class="QPushButton" name="btn_Graph">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -1392,6 +1392,232 @@ background-color:#DFE4ED;
         <width>110</width>
         <height>65</height>
        </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="BrightText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="BrightText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="BrightText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>203</red>
+            <green>232</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
       </property>
       <property name="font">
        <font>
@@ -1416,7 +1642,7 @@ background-color:#EFF8FF;
 }</string>
       </property>
       <property name="text">
-       <string>저장</string>
+       <string>그래프</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1427,7 +1653,7 @@ background-color:#EFF8FF;
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QPushButton" name="btn_Ln">
+     <widget class="QPushButton" name="btn_E">
       <property name="minimumSize">
        <size>
         <width>110</width>
@@ -1463,7 +1689,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>ln</string>
+       <string>e</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1474,7 +1700,7 @@ background-color:#DFE4ED;
      </widget>
     </item>
     <item row="0" column="0" colspan="2">
-     <widget class="QPushButton" name="btn_Math_Expression">
+     <widget class="QPushButton" name="btn_Memory_Set">
       <property name="minimumSize">
        <size>
         <width>230</width>
@@ -1510,7 +1736,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>수식</string>
+       <string>메모리</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1557,7 +1783,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>sin</string>
+       <string>Sin</string>
       </property>
       <property name="iconSize">
        <size>
@@ -1847,7 +2073,7 @@ background-color:#EBEEF2;
      </widget>
     </item>
     <item row="0" column="3" colspan="2">
-     <widget class="QPushButton" name="btn_Graph">
+     <widget class="QPushButton" name="btn_Memory_Get">
       <property name="minimumSize">
        <size>
         <width>230</width>
@@ -1883,7 +2109,7 @@ background-color:#DFE4ED;
 }</string>
       </property>
       <property name="text">
-       <string>그래프</string>
+       <string>불러오기</string>
       </property>
       <property name="iconSize">
        <size>
