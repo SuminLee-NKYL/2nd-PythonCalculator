@@ -1,6 +1,7 @@
 import sys
 import math
 import re
+from graph import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
 from PyQt5 import uic
@@ -31,7 +32,7 @@ class WindowClass(QMainWindow, form_class) :
         self.btn_9.clicked.connect(self.btn_clicked)
         self.btn_Div.clicked.connect(self.btn_clicked)
         self.btn_Factorial.clicked.connect(self.btn_clicked)
-        self.btn_E.clicked.connect(self.btn_clicked)
+        self.btn_Pi.clicked.connect(self.btn_clicked)
         self.btn_Pow.clicked.connect(self.btn_clicked)
         self.btn_4.clicked.connect(self.btn_clicked)
         self.btn_5.clicked.connect(self.btn_clicked)
@@ -78,7 +79,9 @@ class WindowClass(QMainWindow, form_class) :
             self.tv_Display.setAlignment(Qt.AlignRight)
             return 1
         elif btn_input == '그래프':
-            print("Set Graph")
+            print("show Graph")
+            self.graph = Graph()
+            self.graph.exec()
             return 1
         elif btn_input == 'CE':
             print("Clear")
@@ -89,13 +92,13 @@ class WindowClass(QMainWindow, form_class) :
         elif btn_input == 'Ans':
             print("Get Last Answer")
             self.text_value=str(self.last_result)
-            self.tv_Display.setText(str(resultValue))
+            self.tv_Display.setText(str(self.text_value))
             self.tv_Display.setAlignment(Qt.AlignRight)
             return 1
         elif btn_input == '<-':
             print("Delete")
             self.text_value=self.text_value[:-1]
-            self.tv_Display.setText(str(resultValue))
+            self.tv_Display.setText(str(self.text_value))
             self.tv_Display.setAlignment(Qt.AlignRight)
             return 1
         elif btn_input == '=':
@@ -143,7 +146,7 @@ class WindowClass(QMainWindow, form_class) :
         self.text_value = re.sub('Cos','math.cos',self.text_value)
         self.text_value = re.sub('Tan','math.tan',self.text_value)
         self.text_value = re.sub('Factorial','math.factorial',self.text_value)
-        self.text_value = re.sub('e','math.e',self.text_value)
+        self.text_value = re.sub('π','math.pi',self.text_value)
         self.text_value = re.sub('Log10','math.log10',self.text_value)
         self.text_value = re.sub('Log2','math.log2',self.text_value)
         self.text_value = re.sub('Ln','math.log',self.text_value)
