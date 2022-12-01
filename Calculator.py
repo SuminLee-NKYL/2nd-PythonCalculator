@@ -108,7 +108,7 @@ class WindowClass(QMainWindow, form_class) :
                 self.replaceExpression()                           # 수식 변환
                 print(self.text_value)
                 resultValue = eval(self.text_value.lstrip("0"))
-                self.tv_Display.setText(str(resultValue))
+                self.tv_Display.setText(format(resultValue, ".3f"))
                 self.tv_Display.setAlignment(Qt.AlignRight)
                 self.last_result = resultValue
                 self.tv_Display.setAlignment(Qt.AlignRight)
@@ -128,6 +128,12 @@ class WindowClass(QMainWindow, form_class) :
         if btn_input == 'x!' :
             print('factorial')
             btn_input = 'Factorial('
+        if btn_input == 'x' :
+            print('multi')
+            btn_input = '*'
+        if btn_input == '÷' :
+            print('div')
+            btn_input = '/'
         if btn_input == 'X^Y' :
             print('Power')
             btn_input = '**'
@@ -152,8 +158,7 @@ class WindowClass(QMainWindow, form_class) :
         self.text_value = re.sub('Ln','math.log',self.text_value)
         self.text_value = re.sub('Exp','math.exp',self.text_value)
         self.text_value = re.sub('SquareRoot','math.sqrt', self.text_value)
-        self.text_value = re.sub('x','*',self.text_value)
-        self.text_value = re.sub('÷','/',self.text_value)
+
             
     
 
